@@ -1,0 +1,132 @@
+@font-face{
+  font-family: MyFont;
+  src: url(Poppins-Regular.woff);
+}
+*{
+  font-family: MyFont;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  background: linear-gradient(109.6deg, rgba(156,252,248,1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.text{
+  text-align: center;
+  letter-spacing: 5px;
+  border-right: 5px solid #fff;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+        typing 2s steps(32),
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50%{
+    border-color: transparent;
+  }
+  
+}
+
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+.messages {
+  padding: 10px;
+  max-height: auto;
+  overflow-y: scroll;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.msg-incoming {
+  background-color: #edeade;
+}
+
+.msg-outgoing {
+  background-color: #add8e6;
+  text-align: right;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.msg-reply {
+  display: flex;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+  position: fixed;
+}
+.msg-reply button{
+  height: 40px;
+}
+
+.msg-reply input {
+  flex: 1;
+  width: 1230px;
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid #999;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+}
+.msg-reply button{
+  width: 80px;
+}
+.msg-reply button:hover {
+  background-color: rgb(64, 224, 208);
+  color: #f0ffff;
+  outline: none;
+  border: 1px solid #89cff0;
+  cursor: pointer; 
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+.footer_col .social img{
+    width: 20px;
+    margin: 5px;
+  text-align: center;
+  justify-content: center;
+}
